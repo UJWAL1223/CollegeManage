@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="College.TechStdPage">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Button
+        x:Name="TechBtn"
+        Text="Teacher"
+        Grid.Row="1"
+        Grid.Column="1"
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Clicked="OnClicked"
+        BackgroundColor="Black"
+        TextColor="White"
+        FontSize="Small"
+        CornerRadius="25"
+        WidthRequest="150"
+        Padding="0"
+        ClassId="techBtn"
+        />
+
+        <Button
+        x:Name="StdBtn"
+        Text="Student"
+        Grid.Row="1"
+        Grid.Column="3"
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        BackgroundColor="Black"
+        TextColor="White"
+        FontSize="Small"
+        CornerRadius="25"
+        WidthRequest="150"
+        Padding="0"
+        ClassId="stdBtn"
+        />
+
+    </Grid>
+
+</ContentPage>
+    
+    
+    

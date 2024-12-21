@@ -62,6 +62,19 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
+		<PackageReference Include="MySql.Data" Version="9.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="TechStd.xaml.cs">
+	    <DependentUpon>TechStd.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="TechStd.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
